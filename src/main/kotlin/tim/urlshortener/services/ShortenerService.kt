@@ -2,7 +2,7 @@ package tim.urlshortener.services
 
 import org.springframework.stereotype.Service
 import tim.urlshortener.domains.Url
-import tim.urlshortener.repository.ShortenerRepository
+import tim.urlshortener.repositories.ShortenerRepository
 import java.util.*
 
 @Service
