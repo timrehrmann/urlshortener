@@ -31,7 +31,7 @@ class ShortenerController(val shortenerService: ShortenerService) {
     ) {
         val url: Optional<Url> = shortenerService.getLongUrl(shortUrl)
         if (url.isEmpty || url.get().longUrl.isEmpty()) {
-            response.sendError(HttpStatus.BAD_REQUEST.value(), "URL NOT FOUND")
+            response.sendError(HttpStatus.NOT_FOUND.value(), "URL NOT FOUND")
         } else {
             response.sendRedirect(url.get().longUrl)
         }
