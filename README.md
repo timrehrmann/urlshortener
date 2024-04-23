@@ -33,6 +33,10 @@ To use the shortened URL, you can simply call the endpoint
 /{shortURL}
 ```
 using the hash value from the shortUrl field.
+Example:
+```
+/-1632447086
+```
 This endpoint will send a redirect response with the long url.
 
 
